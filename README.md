@@ -3,6 +3,7 @@ Visualize different feature detection techniques. The OpenCV installation was ta
 
 ## Installation on Mac OS
 This is summarized from http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/
+
 1. Requires Python 2.7, Git
 2. Install Numpy
   ```
