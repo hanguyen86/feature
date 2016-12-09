@@ -5,9 +5,9 @@ Visualize different feature detection techniques. The OpenCV installation was ta
 This is summarized from http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/
 
 1. Requires Python 2.7, Git
-2. Install Numpy
+2. Install Python packages
   ```
-pip install numpy
+pip install -r requirement.txt
   ```
   
 3. Install necesssary packages
@@ -45,8 +45,9 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local \
 make -j4
 make install
   ```
+  
 6. Verify in python shell
-  ```
+  ```python
 >>> import cv2
 >>> cv2.__version__
 '3.0.0'
