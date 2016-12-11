@@ -1,7 +1,7 @@
 # Feature Detection/Descriptor with OpenCV
 This project aims to facilitate the use of feature detector/descriptor in OpenCV from Python code. You can try and visualize different combinations of detector vs. descriptor.
 
-![Matching result]('/src/resouces/demo.jpg')
+<img src="./src/resources/demo.jpg" width="400" align="middle">
 
 ## Installation on Mac OS
 This is summarized from http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/
@@ -54,3 +54,21 @@ make install
 >>> cv2.__version__
 '3.0.0'
   ```
+
+## Usage
+
+To show all available options:
+```
+python feature.py -h
+```
+
+An example:
+
+```
+python feature.py  -t  <1: detect feature, 2: matching features with those from another image> \
+		   -k  <detector technique: 1 -> 9> \
+		   -d  <descriptor technique: 1-> 11> \
+		   -i1 <path to image 1> \
+		   -i2 <path to image 2 (only neeeded for matching)> \
+		   -o  <path to output image>
+```
