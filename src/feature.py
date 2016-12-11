@@ -319,7 +319,9 @@ class LUCIDDescriptor(Descriptor):
     
     def __init__(self):
         Descriptor.__init__(self)
-        self.descriptor = cv2.xfeatures2d.LUCID_create()
+        # 1=3x3, 2=5x5, 3=7x7 and so forth
+        self.descriptor = cv2.xfeatures2d.LUCID_create(lucid_kernel = 2,
+                                                       blur_kernel = 2)
         
 # VGG (http://docs.opencv.org/trunk/d6/d00/classcv_1_1xfeatures2d_1_1VGG.html)
 class VGGDescriptor(Descriptor):
@@ -395,11 +397,11 @@ def main(argv):
                         4: ORB,
                         5: BRIEF,   x
                         6: DAISY,   x
-                        7: Boost,
+                        7: Boost,   x
                         8: FREAK,
-                        9: LATCH,
-                        10: LUCID,
-                        11: VGG
+                        9: LATCH,   x
+                        10: LUCID,  
+                        11: VGG     x
                         """,
                         required=True)
     parser.add_argument('-i1','--input1',

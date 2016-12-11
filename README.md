@@ -1,5 +1,7 @@
 # Feature Detection/Descriptor with OpenCV
-Visualize different feature detection techniques. The OpenCV installation was taken 
+This project aims to facilitate the use of feature detector/descriptor in OpenCV from Python code. You can try and visualize different combinations of detector vs. descriptor.
+
+![Matching result]('/src/resouces/demo.jpg')
 
 ## Installation on Mac OS
 This is summarized from http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/
