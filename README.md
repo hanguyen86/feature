@@ -4,7 +4,7 @@ This project aims to facilitate the use of feature detector/descriptor in OpenCV
 <img src="./src/resources/demo.jpg" width="400" align="middle">
 
 ## Installation on Mac OS
-This is summarized from http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/
+The instruction below was summarized from [Adrian's website](http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/). He did a very great job explaining every necessary steps. He also had installation guide for Ubuntu users too!
 
 1. Requires Python 2.7, Git
 2. Install Python packages
