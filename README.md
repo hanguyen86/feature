@@ -1,5 +1,5 @@
 # Feature Detection/Descriptor with OpenCV
-This project aims to facilitate the use of feature detector/descriptor in OpenCV from Python code. You can try and visualize different combinations of detector vs. descriptor.
+This project aims to facilitate the use of feature detector/descriptor in OpenCV (latest version) from Python code. You can try and visualize different combinations of detector vs. descriptor.
 
 <img src="./src/resources/demo.jpg" width="400" align="middle">
 
@@ -22,14 +22,14 @@ brew install cmake pkg-config jpeg libpng libtiff openexr eigen tbb
  ```
 git clone https://github.com/Itseez/opencv.git
 cd opencv
-git checkout 3.0.0
+git checkout master
  ```
    * opencv_contrib
    ```
 cd ..
 git clone https://github.com/Itseez/opencv_contrib
 cd opencv_contrib
-git checkout 3.0.0
+git checkout master
    ```
    
 5. Build and install OpenCV
@@ -52,7 +52,7 @@ make install
   ```python
 >>> import cv2
 >>> cv2.__version__
-'3.0.0'
+'3.1.0'
   ```
 
 ## Usage

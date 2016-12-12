@@ -150,7 +150,6 @@ class Detector:
             'FASTDetector',
             'BRISKDetector',
             'ORBDetector',
-            'MSDDetector',
             'StarDetector',
             'AGASTDetector',
             'GFTTDetector'
@@ -190,13 +189,6 @@ class ORBDetector(Detector):
     def __init__(self):
         Detector.__init__(self)
         self.detector = cv2.ORB_create()
-    
-# MSD (Maximal Self-Dissimilarity) 
-class MSDDetector(Detector):
-    
-    def __init__(self):
-        Detector.__init__(self)
-        self.detector = cv2.xfeatures2d.MSDDetector_create()
 
 # StarDetector
 class StarDetector(Detector):
@@ -383,10 +375,9 @@ def main(argv):
                         3: FAST,
                         4: BRISK,
                         5: ORB,
-                        6: MSD,     x
-                        7: Star,
-                        8: AGAST,
-                        9: GFTT
+                        6: Star,
+                        7: AGAST,
+                        8: GFTT
                         """,
                         required=True)
     parser.add_argument('-d', '--descriptor',
@@ -395,13 +386,13 @@ def main(argv):
                         2: KAZE,
                         3: BRISK,
                         4: ORB,
-                        5: BRIEF,   x
-                        6: DAISY,   x
-                        7: Boost,   x
+                        5: BRIEF,
+                        6: DAISY,
+                        7: Boost,
                         8: FREAK,
-                        9: LATCH,   x
+                        9: LATCH,
                         10: LUCID,  
-                        11: VGG     x
+                        11: VGG
                         """,
                         required=True)
     parser.add_argument('-i1','--input1',
